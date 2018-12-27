@@ -21,9 +21,10 @@ export class WordpressService {
 	getPost(slug){
 		console.log(slug);
 		return this.http.get<any[]>('http://theemmadilemma.com//wp-json/wp/v2/posts?_embed', {
-	        params: {
-	        slug: slug
-    	})
+				params: {
+				slug: slug
+    		}
+		})
 	}
 
 }

@@ -1,11 +1,10 @@
 <h1>home</h1>
 <h2>Here are some links to help you start: </h2>
-<!-- <ul>
-  <li *ngFor="let post of posts$ | async">
-    <div>{{ post.title.rendered }}</div>
-    <img [src]="post['_embedded']['wp:featuredmedia'][0]['source_url']">
-    <div [innerHTML]="post.excerpt.rendered"></div>
-    <div [innerHTML]="post['_embedded']['wp:term'][0][0].name"></div>
-    <a [href]="post.link">View</a>
+<ul>
+  <li *ngFor="let category of categories">
+    <a [routerLink]="['/projects', category]">{{category}}</a>
   </li>
-</ul> -->
+  <li>
+    <a [routerLink]="['/projects']">all projects</a>
+  </li>
+</ul>

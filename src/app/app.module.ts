@@ -7,6 +7,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { SingleProjectComponent } from './pages/single-project/single-project.component';
 import { AllProjectsComponent } from './pages/all-projects/all-projects.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
+import { CategoryProjectComponent } from './pages/category-project/category-project.component';
 
 @NgModule({
   declarations: [
@@ -14,14 +15,16 @@ import { NotFoundComponent } from './pages/not-found/not-found.component';
     HomeComponent,
     SingleProjectComponent,
     AllProjectsComponent,
+    CategoryProjectComponent,
     NotFoundComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     RouterModule.forRoot([
-    	{ path: '', component: HomeComponent },
-    	{ path: 'projects/:id', component: SingleProjectComponent},
+      { path: '', component: HomeComponent },
+      { path: 'projects/:category/:id', component: SingleProjectComponent},
+    	{ path: 'projects/:category', component: CategoryProjectComponent},
     	{ path: 'projects', component: AllProjectsComponent },
     	{ path: '**', component: NotFoundComponent }
     ])
