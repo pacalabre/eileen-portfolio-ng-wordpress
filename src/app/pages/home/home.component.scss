@@ -23,12 +23,47 @@
     margin-top: -35px;
 }
 
+/* Intro Section */
+
+.about-banner {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.eileen-img {
+    margin: 0;
+    padding: 0;
+}
+
+.main-intro, .main-section {
+	text-align: center;
+}
+
+.main-intro {
+	background-color: white;
+}
+
+.main-intro-h2 {
+    display: block;
+    border-bottom: none;
+    padding: 80px 0;
+}
+
+.main-intro-h3 {
+	margin-left: auto;
+	margin-right: auto;
+	border: none;
+	font-family: "IM Fell DW Pica", serif;
+	color: #e74c3c;
+}
+
 /* Media Queries */
 
 @media only screen and (min-width: 768px) {
 
     .hero-h1 {
-		font-size: 5rem;
+		font-size: 4rem;
 	}
 
 	.hero-img {
@@ -36,8 +71,12 @@
 	}
 
 	.hero-text-p {
-		font-size: 4rem;
-	}
+		font-size: 3rem;
+    }
+    
+    .about-banner {
+        flex-direction: row;
+    }
 }
 
 
