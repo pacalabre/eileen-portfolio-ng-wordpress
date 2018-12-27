@@ -12,7 +12,9 @@ export class AppComponent {
 
   constructor(private wp: WordpressService) {
     this.posts$ = this.wp.getAllPosts();
-      this.posts$.subscribe((res) => console.log(res));
+      this.posts$.subscribe((res) => {
+        return res;
+      });
   }
 
 

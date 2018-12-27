@@ -8,6 +8,7 @@ import { SingleProjectComponent } from './pages/single-project/single-project.co
 import { AllProjectsComponent } from './pages/all-projects/all-projects.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { CategoryProjectComponent } from './pages/category-project/category-project.component';
+import { NavComponent } from './components/nav/nav.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { CategoryProjectComponent } from './pages/category-project/category-proj
     SingleProjectComponent,
     AllProjectsComponent,
     CategoryProjectComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    NavComponent
   ],
   imports: [
     BrowserModule,

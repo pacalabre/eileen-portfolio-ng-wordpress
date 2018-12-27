@@ -16,14 +16,12 @@ export class HomeComponent implements OnInit {
   constructor(private wp: WordpressService) {
     this.posts$ = this.wp.getAllPosts();
       this.posts$.subscribe((res) =>  {
-        console.log(res);
         res.forEach(post => {
           let categoryName = post['_embedded']['wp:term'][0][0].slug;
           if (!this.categories.includes(categoryName)) {
             this.categories.push(categoryName);
           }
         })
-        console.log(this.categories);
       })
   }
 

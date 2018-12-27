@@ -1,0 +1,44 @@
+.hero-img {
+	height: 100vh;
+	text-align: center;
+	position: relative;
+	background-color: white;
+}
+
+.section-hero-text {
+	margin: 0 auto;
+	position: absolute;
+    top: 20%;
+    right: 7%;
+    left: 7%;
+}
+
+.hero-h1 {
+	font-size: 3.5rem;
+}
+
+.hero-text-p {
+	font-size: 2rem;
+    text-align: center;
+    margin-top: -35px;
+}
+
+/* Media Queries */
+
+@media only screen and (min-width: 768px) {
+
+    .hero-h1 {
+		font-size: 5rem;
+	}
+
+	.hero-img {
+		height: 100vh;
+	}
+
+	.hero-text-p {
+		font-size: 4rem;
+	}
+}
+
+
+
