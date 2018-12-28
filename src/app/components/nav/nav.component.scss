@@ -17,6 +17,10 @@
 	color: rgba($color: #222, $alpha: 1.0);
 }
 
+.navbar-collapse {
+	z-index: 10000;
+	background: white;
+}
 
 @media only screen and (min-width: 768px) {
 	.nav-link:hover {
