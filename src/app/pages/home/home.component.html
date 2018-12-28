@@ -5,6 +5,19 @@
       <p class="hero-text-p">Copywriter | Seattle, Wa</p>
     </div>
   </section>
+  <section id="projects" class="main-section">
+    <h2 class="main-projects-h2">Projects</h2>
+    <div class="project-link-section row">
+      <ul class="project-ul">
+        <li *ngFor="let category of categories" class="project-li">
+          <a class="project-li-a" [routerLink]="['/projects', category]">{{category}}</a>
+        </li>
+        <li class="project-li">
+          <a class="project-li-a" [routerLink]="['/projects']">all projects</a>
+        </li>
+      </ul>
+    </div>
+  </section>
   <section id="about" class="main-intro">
     <div class="about-banner">
       <img class="eileen-img col-xs-12 col-md-6" src="assets/eileen.jpg"/>
@@ -45,11 +58,3 @@
 
 
 
-<ul>
-  <li *ngFor="let category of categories">
-    <a [routerLink]="['/projects', category]">{{category}}</a>
-  </li>
-  <li>
-    <a [routerLink]="['/projects']">all projects</a>
-  </li>
-</ul>

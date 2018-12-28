@@ -461,12 +461,12 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 h1 {
-	font-size: 3.5rem;
+	font-size: 3rem;
 	border-bottom: #e74c3c solid 10px;
 }
 
 h2 {
-	font-size: 55px;
+	font-size: 2.5rem;
 	text-decoration: underline #e74c3c;
 }
 
@@ -488,7 +488,7 @@ h6 {
 
 p, label, .main-p-ul{	
 	font-family: "IM Fell DW Pica", serif;
-	font-size: 1.5rem;
+	font-size: 1.25rem;
     text-align: left;
     margin: 5%;
 }
@@ -514,9 +514,9 @@ textarea {
 	border: solid black thin;
 }
 
-.app-container {
-    max-width: 1400px;
-}
+// .app-container {
+//     max-width: 1400px;
+// }
 
 .container-fluid {
     padding-right: 0;
@@ -524,7 +524,27 @@ textarea {
     margin: auto;
 }
 
+.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
 @media only screen and (min-width: 768px) {
+    h1 {
+        font-size: 4rem;
+    }
+
+    h2 {
+        font-size: 3rem;
+    } 
+     
+    p,label, .main-p-ul{ 
+        font-size: 1.5rem;
+    }
+    
+}
+
+@media only screen and (min-width: 1100px) {
     h1 {
         font-size: 5rem;
     }
