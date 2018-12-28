@@ -3,3 +3,38 @@
 	width: 70px;
 	margin-left: 20px;
 }
+
+.hamburger-bar {
+	width: 45px;
+	display: inherit;
+	opacity: .7;
+}
+
+.nav-link {
+	padding: 10px;
+    font-size: 25px;
+    font-family: "IM Fell DW Pica", serif;
+	color: rgba($color: #222, $alpha: 1.0);
+}
+
+
+@media only screen and (min-width: 768px) {
+	.nav-link:hover {
+		color: #e74c3c;
+		transition: .5s;
+		border-bottom: solid;
+    	padding-bottom: 2px;
+	}
+}
+
+@media only screen and (min-width: 992px) {
+
+	.navbar-expand-lg {
+		justify-content: space-between;
+	}
+
+	.navbar-collapse {
+		flex: initial;
+		margin-right: 20px;
+	}
+}

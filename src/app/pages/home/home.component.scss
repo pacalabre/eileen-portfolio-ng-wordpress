@@ -14,7 +14,7 @@
 }
 
 .hero-text-p {
-	font-size: 2rem;
+	font-size: 1.5rem;
     text-align: center;
     margin-top: -35px;
 }
@@ -110,6 +110,11 @@
 /* Media Queries */
 
 @media only screen and (min-width: 550px) {
+
+    .hero-text-p {
+        font-size: 1.75rem;
+    }
+
     .project-li {
         flex: 0 0 45%;
     }
@@ -119,7 +124,11 @@
 
 	.hero-img {
 		height: 100vh;
-	}
+    }
+    
+    .hero-text-p {
+        font-size: 2.2rem;
+    }
     
     .about-banner {
         flex-direction: row;
