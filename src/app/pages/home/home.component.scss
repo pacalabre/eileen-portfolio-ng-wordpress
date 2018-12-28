@@ -52,20 +52,6 @@
       justify-content: center;
   }
 
-//   .project-li {
-//     border: solid #e74c3c thin;
-//     padding: 0 15%;
-//     background: #e95949;
-//     display: inline-flex;
-//     align-items: center;
-//     justify-content: center;
-//     height: 200px;
-//   }
-
-//   .project-li:nth-child(1),.project-li:nth-child(4n), .project-li:nth-child(5n) {
-//     background: #e74c3c;
-//   }
-
   .project-li {
     background: white;
     color: #000;
@@ -76,10 +62,6 @@
     margin: 10px;
     flex: 100%;
   }
-
-//   .project-li:nth-child(1),.project-li:nth-child(4n), .project-li:nth-child(5n) {
-//     background: #e74c3c;
-//   }
 
   .project-li-a {
     font-family: "IM Fell DW Pica", serif;
@@ -107,7 +89,8 @@
 }
 
 .main-intro {
-	background-color: white;
+    background-color: white;
+    padding-bottom: 20px;
 }
 
 .main-intro-h2 {
