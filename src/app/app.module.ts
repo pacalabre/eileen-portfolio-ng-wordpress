@@ -9,6 +9,7 @@ import { AllProjectsComponent } from './pages/all-projects/all-projects.componen
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { CategoryProjectComponent } from './pages/category-project/category-project.component';
 import { NavComponent } from './components/nav/nav.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { NavComponent } from './components/nav/nav.component';
     AllProjectsComponent,
     CategoryProjectComponent,
     NotFoundComponent,
-    NavComponent
+    NavComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
