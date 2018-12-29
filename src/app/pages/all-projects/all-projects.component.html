@@ -1,5 +1,5 @@
 <ul>
-	<li *ngFor="let post of posts$ | async">
+	<li *ngFor="let post of posts">
 		<a [routerLink]="['/projects', post['_embedded']['wp:term'][0][0].slug, post.slug]">
 			<div>{{post.title.rendered}}</div>
 		</a>

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { Observable } from 'rxjs';
 import { WordpressService } from '../../wordpress.service';
 
@@ -8,23 +8,22 @@ import { WordpressService } from '../../wordpress.service';
   styleUrls: ['./home.component.scss']
 })
 
-export class HomeComponent implements OnInit {
+export class HomeComponent {
 
-  posts$: Observable<any[]>;
   categories=[];
+  postArr = [];
 
   constructor(private wp: WordpressService) {
-    this.posts$ = this.wp.getAllPosts();
-      this.posts$.subscribe((res) =>  {
-        res.forEach(post => {
-          let categoryName = post['_embedded']['wp:term'][0][0].slug;
-          if (!this.categories.includes(categoryName)) {
-            this.categories.push(categoryName);
-          }
-        })
-      })
+    this.postArr = this.wp.getPostsFromService();
   }
 
-  ngOnInit() {
+  ngDoCheck() {
+    this.postArr = this.wp.getPostsFromService();
+    this.postArr.forEach(post => {
+      let categoryName = post['_embedded']['wp:term'][0][0].slug;
+      if (!this.categories.includes(categoryName)) {
+        this.categories.push(categoryName);
+      }
+    })
   }
 }

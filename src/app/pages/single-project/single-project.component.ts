@@ -10,11 +10,13 @@ import { Observable } from 'rxjs';
 })
 
 export class SingleProjectComponent implements OnInit {
+
   slugName = "";
-  post$: Observable<any[]>;
+  // post$: Observable<any[]>;
   projectTitle;
   projectText;
   projectImg;
+  allPosts = [];
  
   constructor(private route: ActivatedRoute, private wp: WordpressService) { }
 
@@ -22,19 +24,22 @@ export class SingleProjectComponent implements OnInit {
     this.route.paramMap
       .subscribe(paramsAsMap => {
         this.slugName = this.route.snapshot.paramMap.get("id");
-        console.log(this.route);
       })
-      this.postInit();
   }
 
-  postInit() {
-    this.post$ = this.wp.getPost(this.slugName);
-    this.post$.subscribe((res) => {
-      console.log(res[0]);
-      this.projectTitle = res[0].title.rendered;
-      this.projectText = res[0].content.rendered;
-      this.projectImg = res[0]._embedded["wp:featuredmedia"][0].source_url;
+  ngDoCheck() {
+    this.showPost();
+  }
+
+  showPost() {
+    this.allPosts = this.wp.getPostsFromService();
+    this.allPosts.forEach(post => {
+      if(post.slug === this.slugName) {
+        this.projectTitle = post.title.rendered;
+        this.projectText = post.content.rendered;
+        this.projectImg = post._embedded["wp:featuredmedia"][0].source_url;
+      }
     })
   }
-
+ 
 }
