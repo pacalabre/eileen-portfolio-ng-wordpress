@@ -31,7 +31,11 @@ import { FooterComponent } from './components/footer/footer.component';
     	{ path: 'projects/:category', component: CategoryProjectComponent},
     	{ path: 'projects', component: AllProjectsComponent },
     	{ path: '**', component: NotFoundComponent }
-    ])
+    ],
+    {
+      scrollPositionRestoration: 'enabled',
+      anchorScrolling: 'enabled',
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
