@@ -58,17 +58,20 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    height: 200px;
+    min-height: 200px;
     margin: 10px;
     flex: 100%;
   }
 
   .project-li-a {
     font-family: "IM Fell DW Pica", serif;
-    display: inline-block;
+    display: block;
     font-size: 30px;
+    width: 100%;
     color: #222;
     font-weight: 500;
+    padding: 30% 0;
+    border: 10px solid transparent;
   }
 
 /* Intro Section */
@@ -143,11 +146,11 @@
         box-shadow: 5px 5px 10px rgba(0, 0, 0, .3);
         transition: .65s;
         transform: scale(1.03);
-        border: #e74c3c solid 10px;
 
         .project-li-a {
             color: #e74c3c;
             text-decoration: underline;
+            border: #e74c3c solid 10px;
         }
     }
 }
