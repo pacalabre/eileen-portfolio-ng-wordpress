@@ -13,7 +13,7 @@ export class WordpressService {
     constructor(private http: HttpClient) { }
  
     getAllPosts() {
-        this.http.get<any[]>('http://theemmadilemma.com//wp-json/wp/v2/posts?_embed', {
+        this.http.get<any[]>('https://public-api.wordpress.com/wp/v2/sites/eileenconsedine.wordpress.com/posts?_embed', {
             params: {
                 per_page: '100'
             }
@@ -30,7 +30,7 @@ export class WordpressService {
 
     getPost(slug) {
      console.log(slug);
-     return this.http.get<any[]>('http://theemmadilemma.com//wp-json/wp/v2/posts?_embed', {
+     return this.http.get<any[]>('https://public-api.wordpress.com/wp/v2/sites/eileenconsedine.wordpress.com/posts?_embed', {
             params: {
             slug: slug
          }
@@ -38,7 +38,7 @@ export class WordpressService {
     }
 
     getFeatured() {
-     return this.http.get<any[]>('http://theemmadilemma.com//wp-json/wp/v2/posts?_embed', {
+     return this.http.get<any[]>('https://public-api.wordpress.com/wp/v2/sites/eileenconsedine.wordpress.com/posts?_embed', {
             params: {
              per_page: '100'
          }
@@ -46,7 +46,7 @@ export class WordpressService {
     }
 
     getPostsInCategory(){
-     return this.http.get<any[]>('http://theemmadilemma.com//wp-json/wp/v2/posts?_embed', {
+     return this.http.get<any[]>('https://public-api.wordpress.com/wp/v2/sites/eileenconsedine.wordpress.com/posts?_embed', {
             params: {
              per_page: '100',
              // category: category

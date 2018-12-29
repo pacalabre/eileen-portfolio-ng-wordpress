@@ -34,7 +34,7 @@ export class CategoryProjectComponent implements OnInit {
 
   filterPostsByCategory() {
       this.posts.forEach(post => {
-        let categoryName = post['_embedded']['wp:term'][0][0].slug;
+        let categoryName = post['_embedded']['wp:term'][1][0].slug;
         if(categoryName === this.slugName) {
           this.categoryPosts.push(post);
         };
