@@ -1,7 +1,7 @@
 <main class="main-section">
   <ul>
     <li *ngFor="let post of categoryPosts">
-      <a [routerLink]="['/projects', post['_embedded']['wp:term'][0][0].slug, post.slug]">
+      <a [routerLink]="['/projects', post['_embedded']['wp:term'][1][0].slug, post.slug]">
         <div [innerHtml]="post.title.rendered"></div>
       </a>
     </li>
