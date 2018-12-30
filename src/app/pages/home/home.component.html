@@ -1,11 +1,11 @@
-<main>
+<main class="main-section">
   <section class="hero-img">
     <div class="section-hero-text">
       <h1 class="hero-h1">Eileen Consedine</h1>
       <p class="hero-text-p">Copywriter | Seattle, Wa</p>
     </div>
   </section>
-  <section id="projects" class="main-section">
+  <section id="projects">
     <h2 class="main-projects-h2">Projects</h2>
     <div class="project-link-section row">
       <ul class="project-ul">
@@ -23,32 +23,7 @@
       <img class="eileen-img col-xs-12 col-md-6" src="assets/eileen.jpg"/>
       <h2 class="main-intro-h2 col-xs-12 col-md-6">About Me</h2>
     </div>
-    <p class="main-p">Heyo. I’m Eileen, a copywriter and content strategist living in Seattle, WA.
-    Look, I didn’t take the traditional route to copywriting. I’ve always been a writer, but
-    I…uh…we’ll say fumbled with wielding it early on.
-    I didn’t major in advertising. I missed the boat on internships. And where a responsible
-    greenhorn English grad would’ve armed herself against a beleaguered economy by enrolling in
-    portfolio school, I decamped to Colorado to become the world’s worst waitress. This isn’t a
-    humble brag. I’m not some self-glamorizing goof trying to rebrand my youthful flailing as a free-
-    spirited rebellion against THE MAN, maaan. (takes bong rip.)
-    I’m telling you this because it’s true. And because at some point, fed up with choreographing
-    interest in patrons’ meat preferences, I decided not writing was no longer an option. So, I
-    wrote. I wrote for fledgling music festivals. I wrote for photographer friends. I wrote
-    tremendously stupid blogs about space zombies that nobody read. And, eventually, I wrote my
-    way into a job.
-    First, as an in-house writer at a natural gas company in Colorado, and currently as a copywriter
-    at an agency in Seattle, WA where I write for brands like Microsoft and VMware. And you know
-    what? Writing every day kicks ass. I love it. Even when writing about profoundly nerdy things
-    like network freaking virtualization. Because I wasn’t always this lucky. (And also because I
-    sucked ass at the whole waitressing thing.)</p>
-      <p class="main-p main-p-personal-details">Personal miscellanea so confessional it needs an NDA:</p>
-      <ul class="main-p-ul ">
-        <li class="main-p-ul-li">I’ve got a dog named Beanz who loves to lick the couch and drag his butt. He rules!</li>
-        <li class="main-p-ul-li">I take boxing classes, and I’ve punched myself in the face only once.</li>
-        <li class="main-p-ul-li">I’ve written humor pieces for McSweeney’s Internet Tendency</li>
-        <li class="main-p-ul-li">I love: music, the outdoors, and IKEA monkey</li>
-        <li class="main-p-ul-li">I hate: disc golf, bluegrass, and fancy tacos</li>
-      </ul>
+    <div class="main-p" [innerHtml]="this.aboutText[0]"></div>
   </section>
 </main>
 

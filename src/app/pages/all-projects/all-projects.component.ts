@@ -12,6 +12,7 @@ export class AllProjectsComponent {
 
   posts=[];
   posts$:Observable<any[]>;
+  displayPosts = [];
 
   constructor(private wp: WordpressService) {
     // this.posts$ = this.wp.getAllPosts();
@@ -20,5 +21,14 @@ export class AllProjectsComponent {
 
   ngDoCheck() {
     this.posts = this.wp.getPostsFromService();
+    console.log(this.posts);
+    this.posts.forEach(post => {
+      let postTag = post['_embedded']['wp:term'][1][0].slug;
+      if(postTag !== 'about') {
+        this.displayPosts.push(post);
+      }
+    })
+
+    console.log(this.displayPosts);
   }
 }

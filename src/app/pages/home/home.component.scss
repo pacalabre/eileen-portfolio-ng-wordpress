@@ -65,6 +65,7 @@
     min-height: 200px;
     margin: 10px;
     flex: 100%;
+    text-align: center;
   }
 
   .project-li-a {
@@ -98,6 +99,10 @@
 .main-intro {
     background-color: white;
     padding-bottom: 20px;
+}
+
+.main-p {
+    margin: 5%;
 }
 
 .main-intro-h2 {

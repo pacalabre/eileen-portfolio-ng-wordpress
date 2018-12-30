@@ -12,6 +12,7 @@ export class HomeComponent {
 
   categories=[];
   posts = [];
+  aboutText = [];
 
   constructor(private wp: WordpressService) {
     this.posts = this.wp.getPostsFromService();
@@ -21,11 +22,13 @@ export class HomeComponent {
     this.posts = this.wp.getPostsFromService();
     this.posts.forEach(post => {
       let categoryName = post['_embedded']['wp:term'][1][0].slug;
-      if (!this.categories.includes(categoryName)) {
-        this.categories.push(categoryName);
+      if(categoryName !== 'about'){
+        if (!this.categories.includes(categoryName)) {
+          this.categories.push(categoryName);
+        }
+      } else {
+        this.aboutText.push(post.content.rendered);
       }
     })
-    console.log(this.posts);
-    console.log(this.categories);
   }
 }

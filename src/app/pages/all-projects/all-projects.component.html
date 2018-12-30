@@ -1,7 +1,9 @@
-<ul>
-	<li *ngFor="let post of posts">
-		<a [routerLink]="['/projects', post['_embedded']['wp:term'][1][0].slug, post.slug]">
-			<div [innerHtml]= "post.title.rendered"></div>
-		</a>
-	</li>
-</ul>
+<main class="main-section">
+	<ul>
+		<li *ngFor="let post of displayPosts">
+				<a [routerLink]="['/projects', post['_embedded']['wp:term'][1][0].slug, post.slug]">
+					<div [innerHtml]= "post.title.rendered"></div>
+				</a>
+		</li>
+	</ul>
+</main>
