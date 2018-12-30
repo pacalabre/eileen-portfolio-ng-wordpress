@@ -26,5 +26,6 @@ export class HomeComponent {
       }
     })
     console.log(this.posts);
+    console.log(this.categories);
   }
 }

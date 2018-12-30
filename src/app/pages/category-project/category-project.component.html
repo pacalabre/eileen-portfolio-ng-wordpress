@@ -2,7 +2,7 @@
   <ul>
     <li *ngFor="let post of categoryPosts">
       <a [routerLink]="['/projects', post['_embedded']['wp:term'][0][0].slug, post.slug]">
-        <div>{{post.title.rendered}}</div>
+        <div [innerHtml]="post.title.rendered"></div>
       </a>
     </li>
   </ul>

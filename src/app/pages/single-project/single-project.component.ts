@@ -34,7 +34,7 @@ export class SingleProjectComponent implements OnInit {
   showPost() {
     this.allPosts = this.wp.getPostsFromService();
     this.allPosts.forEach(post => {
-      if(post.slug === this.slugName) {
+      if(post.slug === this.slugName) {       
         this.projectTitle = post.title.rendered;
         this.projectText = post.content.rendered;
         this.projectImg = post._embedded["wp:featuredmedia"][0].source_url;
