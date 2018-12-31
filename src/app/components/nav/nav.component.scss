@@ -2,6 +2,10 @@
 	align-items: flex-start;
 }
 
+.navbar-brand {
+	display: inline-flex;
+}
+
 .navbar-toggler {
 	padding-top: 15px;
 }
@@ -10,6 +14,17 @@
 	height: 70px;
 	width: 70px;
 	margin-left: 20px;
+}
+
+.beanz-quote-container {
+    align-items: flex-start;
+	margin-left: -15px;
+	display: inline-flex;
+}
+
+.beanz-quote {
+	width: 75px;
+	display: none;
 }
 
 .hamburger-bar {
@@ -36,6 +51,14 @@
 		color: #e74c3c;
 		transition: .5s;
 	}
+
+	.navbar-brand:hover { 
+		.beanz-quote {
+			display: inline-flex;
+		}
+	}
+		
+	
 }
 
 @media only screen and (min-width: 992px) {
