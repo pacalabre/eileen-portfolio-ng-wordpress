@@ -1,8 +1,10 @@
 <main class="main-section">
+	<h2 class="all-projects-title">All Projects</h2>
 	<ul>
 		<li *ngFor="let post of displayPosts">
-				<a [routerLink]="['/projects', post['_embedded']['wp:term'][1][0].slug, post.slug]">
+				<a class="project-a" [routerLink]="['/projects', post['_embedded']['wp:term'][1][0].slug, post.slug]">
 					<div [innerHtml]= "post.title.rendered"></div>
+					<img class="project-a-img" [src]="post['jetpack_featured_media_url']" alt="project logo"/>
 				</a>
 		</li>
 	</ul>

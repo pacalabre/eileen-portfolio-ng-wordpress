@@ -1,8 +1,9 @@
 <main class="main-section">
+  <img class="category-image" *ngIf="categoryPosts && categoryPosts.length" [src]="this.categoryPosts[0]['jetpack_featured_media_url']" />
   <ul>
     <li *ngFor="let post of categoryPosts">
       <a [routerLink]="['/projects', post['_embedded']['wp:term'][1][0].slug, post.slug]">
-        <div [innerHtml]="post.title.rendered"></div>
+        <div class="category-project" [innerHtml]="post.title.rendered"></div>
       </a>
     </li>
   </ul>

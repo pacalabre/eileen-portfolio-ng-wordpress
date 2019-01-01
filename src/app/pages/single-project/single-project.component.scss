@@ -1,32 +1,50 @@
+img {
+   margin: 5px;
+}
+
+.all-projects-title {
+   text-align: center;
+}
+
 .tag-logo, .post-title,{
     text-align: center;
     display: block;
  }
 
  .tag-logo {
-    margin: 40px auto;
+    margin: 40px;
+    width: 50%;
+    max-width: 100px;
  }
 
  .post-title {
-    margin: 70px auto;
+    margin: 40px auto;
+    padding: 20px;
  }
 
-//  .single-project-text { 
-//      p {
-//      padding: 20px auto;
-//      }
-//  }
+ .single-project-text { 
+   margin: 0 auto;
+   display: block;
+   text-align: center;
+   padding: 20px;
+ }
+
+ .wp-image-51 {
+   width: 100%;
+}
+
  
- 
- // .wp-block-image {
-    //     margin: 0;
-    //     text-align: center;
-    //     display: block;
+@media only screen and (min-width: 768px) {
 
-    // }
+   .tag-logo {
+      max-width: 150px;;
+   }
 
-    // .wp-block-image img {
-    //     width: 100%;
-        
-    // }
+   .post-title {
+      margin: 70px auto;
+   }
 
+   .single-project-text {
+      margin: 40px auto;
+   }
+}

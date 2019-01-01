@@ -1,0 +1,20 @@
+
+
+.category-image {
+    display: block;
+    text-align: center;
+    margin: 60px auto;
+    max-width: 250px;
+}
+
+.category-project {
+    margin: 30px auto;
+    text-align: center;
+    display: block;
+}
+
+@media only screen and (min-width: 768px) { 
+    .category-image {
+        max-width: 300px;
+    }
+}

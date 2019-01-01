@@ -1,0 +1,37 @@
+.all-projects-title {
+    text-align: center;
+    display: block;
+ }
+
+ul {
+    margin: 60px auto;
+    width: 75%;
+    padding: 0;
+}
+
+.project-a {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.project-a-img {
+    border-style: none;
+    width: 30%;
+    margin-right: 5%;
+    margin-top: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+    .project-a {
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+    }
+
+    .project-a-img {
+        margin-top: 0;
+        width: 15%;
+    }
+}
