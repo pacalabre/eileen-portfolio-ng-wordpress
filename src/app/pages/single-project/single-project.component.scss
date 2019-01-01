@@ -1,7 +1,8 @@
-img {
-   margin: 5px;
+.main-section {
+   display: flex;
+   align-items: center;
+   flex-direction: column;
 }
-
 .all-projects-title {
    text-align: center;
 }
@@ -37,7 +38,9 @@ img {
 @media only screen and (min-width: 768px) {
 
    .tag-logo {
-      max-width: 150px;;
+      max-width: 150px;
+      align-self: flex-end;
+      margin-right: 40px;
    }
 
    .post-title {
