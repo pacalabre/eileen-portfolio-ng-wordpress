@@ -1,4 +1,10 @@
-.main-section {
+// .main-section {
+//    display: flex;
+//    align-items: center;
+//    flex-direction: column;
+// }
+
+.single-project-title-container {
    display: flex;
    align-items: center;
    flex-direction: column;
@@ -19,7 +25,7 @@
  }
 
  .post-title {
-    margin: 40px auto;
+    margin-top: 40px;
     padding: 20px;
  }
 
@@ -27,7 +33,7 @@
    margin: 0 auto;
    display: block;
    text-align: center;
-   padding: 20px;
+   padding: 0 40px;
  }
 
  .wp-image-51 {
@@ -44,10 +50,11 @@
    }
 
    .post-title {
-      margin: 70px auto;
+      margin-top: 70px;
    }
 
    .single-project-text {
       margin: 40px auto;
+      padding: 0 60px;
    }
 }

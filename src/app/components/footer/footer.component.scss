@@ -9,39 +9,14 @@
     align-items: center;
 }
 
-.footer-social-links {
-	position: relative;
-}
-
-.footer-contact-info-ul {
-    position: relative;
-    font-family: "IM Fell DW Pica", serif;
-    font-size: 20px;
-}
-
-.footer-social-links-ul {
-	position: relative;
-    display: flex;
-    padding: 0;
-}
-
-.footer-social-links-li a{
-	color: #111111;
-	padding-right: 20px;
-}
-
-.nav-ul-social-h4 {
-	border-bottom: none;
+.copyright-year {
+    text-align: center;  
+    font-size: 1rem;   
 }
 
 @media only screen and (min-width: 768px) {
     .footer {
-        justify-content: space-between;
-        flex-direction: row;
-        padding-bottom: 60px;
+        padding-bottom: 0px;
     }
 
-    .nav-ul-social-h4:hover  {
-		color: #e74c3c;
-	}
 }

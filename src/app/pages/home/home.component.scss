@@ -129,17 +129,36 @@
     width: 100%;
 }
 
-.section-contact-form {
-    width: 95%;
+.contact-info-div {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
-.submit-button {
-    font-family: "IM Fell DW Pica", serif;
-    background: #e74c3c;
-    color: white; 
-    font-size: 25px;
-    padding: 2px 20px;
+.contact-info-ul {
+    padding-left: 40px;
 }
+
+.social-ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin: 40px auto;
+}
+
+.social-li {
+
+    a {
+        text-decoration: none;   
+    }
+    padding: 25px;
+    font-size: 2.5rem;
+    text-decoration: none;
+}
+
 
 /* Media Queries */
 
@@ -192,20 +211,43 @@
         }
     }
 
+    .social-li:hover {
+        a {
+            color: #ba392c;
+        }
+    }
+
+    .contact-info-ul {
+        padding-left: 60px;
+    }
+
     .submit-button:hover {
         background: #ba392c;
     }
+
 }
 
 @media only screen and (min-width: 992px) {
 
     .section-contact {
         flex-direction: row;
-        margin-top: 60px;
+        margin: 60px auto;
     }
 
     .submit-button {
         font-size: 30px;
+    }
+
+}
+
+@media only screen and (min-width: 1100px) {
+
+    .contact-info-ul {
+        padding-left: 0px;
+    }
+
+    .social-li {
+        font-size: 3.5rem;
     }
 
 }
