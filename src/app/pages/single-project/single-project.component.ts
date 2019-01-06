@@ -12,6 +12,7 @@ import { Observable } from 'rxjs';
 export class SingleProjectComponent implements OnInit {
 
   slugName = "";
+  categoryName = ""
   // post$: Observable<any[]>;
   projectTitle;
   projectText;
@@ -24,7 +25,9 @@ export class SingleProjectComponent implements OnInit {
     this.route.paramMap
       .subscribe(paramsAsMap => {
         this.slugName = this.route.snapshot.paramMap.get("id");
+        this.categoryName = this.route.snapshot.paramMap.get("category");
       })
+
   }
 
   ngDoCheck() {

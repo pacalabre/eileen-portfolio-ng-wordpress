@@ -135,6 +135,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
+    margin-top: 60px;
 }
 
 .contact-info-ul {
@@ -199,6 +200,21 @@
         flex-direction: row;
     }
 
+    .section-contact {
+        flex-direction: row;
+        margin: 60px auto;
+    }
+
+    .contact-info-div {
+        margin-top: 0;
+    }
+
+    .contact-info-ul {
+        padding-left: 60px;
+    }
+
+    /* Hovers */
+
     .project-li:hover {
         box-shadow: 5px 5px 10px rgba(0, 0, 0, .3);
         transition: .65s;
@@ -217,10 +233,6 @@
         }
     }
 
-    .contact-info-ul {
-        padding-left: 60px;
-    }
-
     .submit-button:hover {
         background: #ba392c;
     }
@@ -228,11 +240,6 @@
 }
 
 @media only screen and (min-width: 992px) {
-
-    .section-contact {
-        flex-direction: row;
-        margin: 60px auto;
-    }
 
     .submit-button {
         font-size: 30px;

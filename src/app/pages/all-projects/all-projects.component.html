@@ -1,6 +1,6 @@
 <main class="main-section all-category-container">
-	<a class="button projects-btn" [routerLink]="['/']" [fragment]="'projects'">All Projects</a>
-	<h2 class="all-projects-title">All Projects</h2>
+	<a class="button projects-btn" [routerLink]="['/']" [fragment]="'projects'">projects</a>
+	<h2 class="all-projects-title">all projects</h2>
 	<ul>
 		<li *ngFor="let post of displayPosts">
 				<a class="project-a" [routerLink]="['/projects', post['_embedded']['wp:term'][1][0].slug, post.slug]">
