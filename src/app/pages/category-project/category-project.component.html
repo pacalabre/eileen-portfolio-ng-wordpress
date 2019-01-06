@@ -1,4 +1,5 @@
-<main class="main-section">
+<main class="main-section category-container">
+  <a class="button category-projects-all-projects-btn" [routerLink]="['/projects']">All Projects</a>
   <img class="category-image" *ngIf="categoryPosts && categoryPosts.length" [src]="this.categoryPosts[0]['jetpack_featured_media_url']" />
   <ul>
     <li *ngFor="let post of categoryPosts">

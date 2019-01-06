@@ -1,3 +1,12 @@
+.all-category-container {
+    text-align: center;
+}
+
+.projects-btn {
+    display: inline-block;
+    margin: 40px auto;
+}
+
 .all-projects-title {
     text-align: center;
     display: block;
@@ -24,6 +33,13 @@ ul {
 }
 
 @media only screen and (min-width: 768px) {
+    .all-category-container {
+        text-align: left;
+    }
+
+    .projects-btn {
+        margin: 40px;
+    }
     .project-a {
         flex-direction: row;
         align-items: center;

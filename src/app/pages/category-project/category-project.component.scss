@@ -1,4 +1,11 @@
 
+.category-container {
+    text-align: center;
+}
+.category-projects-all-projects-btn {
+    display: inline-block;
+    margin: 40px auto;
+}
 
 .category-image {
     display: block;
@@ -13,7 +20,16 @@
     display: block;
 }
 
-@media only screen and (min-width: 768px) { 
+@media only screen and (min-width: 768px) {
+
+    .category-container {
+        text-align: left;
+    }
+
+    .category-projects-all-projects-btn {
+        margin: 40px;
+    } 
+    
     .category-image {
         max-width: 300px;
     }

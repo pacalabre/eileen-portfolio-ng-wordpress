@@ -561,6 +561,19 @@ textarea {
   z-index: -10; // This is pretty important.
 }
 
+.button {
+  background: #e74c3c;
+  color: white;
+  border: none;
+  padding: 7px 20px;
+  font-family: "IM Fell DW Pica", serif;
+  font-size: 1rem;
+}
+
+.button:hover {
+  color: white;
+}
+
 @media only screen and (min-width: 768px) {
     h1 {
         font-size: 4rem;
@@ -572,6 +585,16 @@ textarea {
      
     p, label, ul, li { 
         font-size: 1.5rem;
+    }
+
+    .button {
+      font-size: 1.25rem;
+    }
+
+    .button:hover {
+      background: #ba392c;
+      text-decoration: none;
+      color: white;
     }
     
 }
