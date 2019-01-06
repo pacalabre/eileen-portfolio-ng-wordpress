@@ -26,3 +26,15 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 # eileen-portfolio-ng-wordpress
+
+# This pages is published at 
+http://hello-eileen.surge.sh/ - test environment
+http://hi-eileen.surge.sh/ - prod environment
+
+# To update the page following commands in the command line, starting in the git master directory
+1) 'ng build --prod --base-href ./' 
+2) 'cd dist'
+3) 'cd eileen-portfolio-ng-wp/'
+4) 'surge'
+5) Now publish to the desired domain
+
