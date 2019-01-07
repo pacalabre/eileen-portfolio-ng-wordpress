@@ -28,8 +28,8 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 # eileen-portfolio-ng-wordpress
 
 # This pages is published at 
-http://hello-eileen.surge.sh/ - test environment
-http://hi-eileen.surge.sh/ - prod environment
+http://hello-eileen.surge.sh/ and http://hi-eileen.surge.sh/  - test environments
+eileenconsedine.com - prod environment
 
 # To update the page following commands in the command line, starting in the git master directory
 1) 'ng build --prod --base-href ./' 

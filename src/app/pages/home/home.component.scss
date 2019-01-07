@@ -66,6 +66,7 @@
     margin: 10px;
     flex: 100%;
     text-align: center;
+    transition: .65s;
   }
 
   .project-li-a {
@@ -98,6 +99,7 @@
 
 .main-intro {
     background-color: white;
+    background: url(/assets/pattern.png);
     padding-bottom: 20px;
 }
 
@@ -217,7 +219,6 @@
 
     .project-li:hover {
         box-shadow: 5px 5px 10px rgba(0, 0, 0, .3);
-        transition: .65s;
         transform: scale(1.03);
 
         .project-li-a {
