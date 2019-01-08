@@ -30,6 +30,5 @@ export class HomeComponent {
         this.aboutText.push(post.content.rendered);
       }
     })
-    console.log(this.posts);
   }
 }

@@ -35,6 +35,7 @@ import { FooterComponent } from './components/footer/footer.component';
     {
       scrollPositionRestoration: 'enabled',
       anchorScrolling: 'enabled',
+      useHash: true
     })
   ],
   providers: [],

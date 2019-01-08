@@ -39,7 +39,6 @@ export class CategoryProjectComponent implements OnInit {
           this.categoryPosts.push(post);
         };
       })
-      console.log(this.categoryPosts);
   }
 }
 

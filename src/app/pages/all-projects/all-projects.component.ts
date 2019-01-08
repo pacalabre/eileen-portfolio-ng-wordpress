@@ -21,7 +21,6 @@ export class AllProjectsComponent {
 
   ngDoCheck() {
     this.posts = this.wp.getPostsFromService();
-    console.log(this.posts);
     this.posts.forEach(post => {
       let postTag = post['_embedded']['wp:term'][1][0].slug;
       let projectImg = post['jetpack_featured_media_url'];
@@ -29,7 +28,5 @@ export class AllProjectsComponent {
         this.displayPosts.push(post);
       }
     })
-
-    console.log(this.displayPosts);
   }
 }
