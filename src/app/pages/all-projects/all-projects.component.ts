@@ -21,12 +21,14 @@ export class AllProjectsComponent {
 
   ngDoCheck() {
     this.posts = this.wp.getPostsFromService();
-    this.posts.forEach(post => {
-      let postTag = post['_embedded']['wp:term'][1][0].slug;
-      let projectImg = post['jetpack_featured_media_url'];
-      if(postTag !== 'about') {
-        this.displayPosts.push(post);
-      }
-    })
+    if(this.displayPosts.length ===0) {
+      this.posts.forEach(post => {
+        let postTag = post['_embedded']['wp:term'][1][0].slug;
+        let projectImg = post['jetpack_featured_media_url'];
+        if(postTag !== 'about') {
+          this.displayPosts.push(post);
+        }
+      })
+    }
   }
 }
