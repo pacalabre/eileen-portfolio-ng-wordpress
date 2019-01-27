@@ -41,7 +41,11 @@
    .single-project-button-logo {
       flex-direction: row-reverse;
       justify-content: space-between;
-      padding: 0 60px;
+      padding: 0 40px;
+   }
+
+   .button {
+      margin: 40px 0;
    }
 
    .tag-logo {

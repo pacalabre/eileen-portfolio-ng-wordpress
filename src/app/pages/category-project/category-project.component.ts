@@ -32,13 +32,21 @@ export class CategoryProjectComponent implements OnInit {
     this.filterPostsByCategory();
   }
 
+
   filterPostsByCategory() {
+    if(this.categoryPosts.length === 0) {
       this.posts.forEach(post => {
         let categoryName = post['_embedded']['wp:term'][1][0].slug;
         if(categoryName === this.slugName) {
           this.categoryPosts.push(post);
         };
       })
+    }
+      console.log(this.categoryPosts);
   }
+
+  // ngOnDestroy() {
+  //   this.categoryPosts = [];
+  // }
 }
 
