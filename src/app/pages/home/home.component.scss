@@ -23,6 +23,14 @@
     margin-top: -35px;
 }
 
+.tigerball {
+    animation-name: spin;
+    animation-duration: 7000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+    width: 23px;
+}
+
 /* Projects Section */
 
 .main-section::before {
@@ -162,6 +170,16 @@
     text-decoration: none;
 }
 
+/* Animation */
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
 
 /* Media Queries */
 
@@ -181,6 +199,10 @@
 
     .main-intro-h2 {
         border: none;
+    }
+
+    .tigerball {
+        width: 28px;
     }
 }
 
@@ -213,6 +235,10 @@
 
     .contact-info-ul {
         padding-left: 60px;
+    }
+
+    .tigerball {
+        width: 40px;
     }
 
     /* Hovers */
