@@ -6,11 +6,14 @@
     </div>
   </section>
   <section id="projects">
-    <h2 class="main-projects-h2">Pr<img class="tigerball" src="../../../assets/tigerball.png"/>jects</h2>
+    <h2 class="main-projects-h2">Projects</h2>
     <div class="project-link-section row">
       <ul class="project-ul">
-        <li *ngFor="let category of categories" class="project-li">
-          <a class="project-li-a" [routerLink]="['/projects', category]">{{category}}</a>
+        <li *ngFor="let category of categoryPosts" class="project-li">
+          <a class="project-li-a" [routerLink]="['/projects', category['_embedded']['wp:term'][1][0].slug]">
+            <img class="category-img" [src]="category['jetpack_featured_media_url']" alt="project logo"/>
+           
+          </a>
         </li>
         <li class="project-li">
           <a class="project-li-a" [routerLink]="['/projects']">all projects</a>

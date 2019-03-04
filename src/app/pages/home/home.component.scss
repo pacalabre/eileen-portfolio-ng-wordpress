@@ -88,6 +88,10 @@
     border: 10px solid transparent;
   }
 
+  .category-img{
+    max-width: 50%;
+  }
+
 /* Intro Section */
 
 .about-banner {
@@ -246,12 +250,6 @@
     .project-li:hover {
         box-shadow: 5px 5px 10px rgba(0, 0, 0, .3);
         transform: scale(1.03);
-
-        .project-li-a {
-            color: #e74c3c;
-            text-decoration: underline;
-            border: #e74c3c solid 10px;
-        }
     }
 
     .social-li:hover {

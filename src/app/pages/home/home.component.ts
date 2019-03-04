@@ -11,6 +11,7 @@ import { WordpressService } from '../../wordpress.service';
 export class HomeComponent {
 
   categories=[];
+  categoryPosts=[];
   posts = [];
   aboutText = [];
 
@@ -24,7 +25,10 @@ export class HomeComponent {
       let categoryName = post['_embedded']['wp:term'][1][0].slug;
       if(categoryName !== 'about'){
         if (!this.categories.includes(categoryName)) {
+          let categoryLogo = post['_embedded']['wp:featuredmedia'][0].link;
           this.categories.push(categoryName);
+          this.categoryPosts.push(post);
+          console.log(this.categoryPosts);
         }
       } else {
         this.aboutText.push(post.content.rendered);
