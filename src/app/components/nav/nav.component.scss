@@ -1,18 +1,20 @@
 .navbar {
 	align-items: flex-start;
+	height: 70px;;
 }
 
 .navbar-brand {
 	display: inline-flex;
+	padding-top: 0;
 }
 
 .navbar-toggler {
-	padding-top: 15px;
+	padding-top: 7px;
 }
 
 .logo-icon {
-	height: 70px;
-	width: 70px;
+	height: 65px;
+	width: 65px;
 	margin-left: 20px;
 }
 
@@ -34,7 +36,7 @@
 }
 
 .nav-link {
-	padding: 10px;
+	padding: 5px;
     font-size: 25px;
     font-family: "IM Fell DW Pica", serif;
 	color: rgba($color: #222, $alpha: 1.0);
